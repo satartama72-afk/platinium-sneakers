@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Platinium Sneakers - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+    <nav class="navbar">
+        <a href="home.html" class="logo">
+            PLATINIUM<span>.</span>
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Our Service</a></li>
+            <li><a href="galeri.html">Galeri</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="produk.html">Produk</a></li>
+        </ul>
+
+        <form class="search-box" action="#galeri" method="get">
+            <input
+                type="search"
+                name="search"
+                placeholder="Search sneakers..."
+                aria-label="Cari sneakers">
+            <button type="submit" aria-label="Cari">
+                &#128269;
+            </button>
+        </form>
+    </nav>
+</header>
+
+<!-- HERO IMAGE SLIDER -->
+<section class="hero-slider" id="heroSlider">
+    <div class="hero-slides">
+
+        <div class="hero-slide active"
+             style="background-image: url('images/banner1.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Collection<br>Kami</h1>
+                <p>Memiliki Berbagai Macam Jenis Sepatu Di Toko Atau Tempat Kami</p>
+                <a href="galeri.html" class="hero-btn">Klik Disini</a>
+            </div>
+        </div>
+
+        <div class="hero-slide"
+             style="background-image: url('images/banner2.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Berbagai Brand<br>Ternama</h1>
+                <p>Seperti Brand Nike, Adidas, Puma, New Balance</p>
+                <a href="produk.html" class="hero-btn">Lihat Brand Kami</a>
+            </div>
+        </div>
+
+        <div class="hero-slide"
+             style="background-image: url('images/banner3.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Kami Tidak Hanya<br>Menjual Sneakers Saja</h1>
+                <p>Kami juga menjual baju, celana, topi, sandal dan lainnya.</p>
+                <a href="produk.html" class="hero-btn">Cari Yang Lain</a>
+            </div>
+        </div>
+
+        <div class="hero-slide"
+             style="background-image: url('images/banner4.jpg');">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <h1>Anda Puas<br>Kami Puas</h1>
+                <p>Apabila Anda senang dengan barang kami, jangan lupa beri rating pada toko dan pelayanan kami.</p>
+                <a href="contact.html" class="hero-btn">Rating</a>
+            </div>
+        </div>
+
+    </div>
+
+    <button type="button" class="hero-arrow prev"
+            aria-label="Slide sebelumnya">&#10094;</button>
+
+    <button type="button" class="hero-arrow next"
+            aria-label="Slide berikutnya">&#10095;</button>
+
+    <div class="hero-dots">
+        <button type="button" class="hero-dot active"
+                aria-label="Slide 1"></button>
+        <button type="button" class="hero-dot"
+                aria-label="Slide 2"></button>
+        <button type="button" class="hero-dot"
+                aria-label="Slide 3"></button>
+        <button type="button" class="hero-dot"
+                aria-label="Slide 4"></button>
+    </div>
+</section>
+
+
+<!-- ===============================
+     PRODUK PLATINIUM SNEAKERS
+================================ -->
+<section id="produk" class="products-section">
+    <div class="products-container">
+
+        <div class="products-heading">
+            <span class="products-label">KOLEKSI PILIHAN</span>
+            <h2>Produk <span>Kami</span></h2>
+            <p>Temukan sneakers favoritmu dari koleksi Platinium Sneakers.</p>
+        </div>
+
+        <div id="productCatalog" class="product-grid">
+            <!-- Produk akan dimuat otomatis oleh script.js -->
+        </div>
+
+        <div id="emptyProducts" class="empty-products" hidden>
+            <h3>Produk belum tersedia</h3>
+            <p>Silakan tambahkan produk melalui halaman Admin.</p>
+            <a href="admin.html">Buka Admin</a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- ABOUT / INTRO SECTION -->
+<section class="semesta-section" id="tentang">
+
+    <div class="semesta-container">
+
+        <h2>
+            Platinium Sneakers
+            <span>Koleksi Sepatu Terlengkap</span>
+        </h2>
+
+        <div class="semesta-line"></div>
+
+        <p class="semesta-description">
+            <strong>Paltinium Sneakers</strong>
+            Toko kami menjual berbagai macam jenis Sepatu
+            sneakers sendal baju celana topi dan berbagai
+            fasion lainnya. kami berkembang di dunia fasion
+            atau dunia thirift yang lagi buming dengan Barang
+            second tetapi kualitas masih bagus atau barang baru 
+            yang gagal masuk pasar. mohon kritik dan saran Anda
+            agar kami bisa memperbaikinya.
+        </p>
+
+        <a href="#kontak" class="semesta-button">
+            Silahkan Kritik/Saran!
+        </a>
+
+    </div>
+</section>
+
+
+<!-- OUR SERVICES -->
+<section class="services-section" id="service">
+
+    <div class="services-container">
+
+        <div class="services-heading">
+            <span class="services-label">WHAT WE OFFER</span>
+            <h2>Layanan <span>PLATINIUM.</span></h2>
+            <p>
+                Temukan pilihan terbaik untuk melengkapi gaya
+                dan kebutuhan fashion kamu.
+            </p>
+            <div class="services-line"></div>
+        </div>
+
+        <div class="services-grid">
+
+            <!-- LAYANAN 1 -->
+            <article class="service-card">
+                <div class="service-icon">👟</div>
+                <span class="service-number">01</span>
+                <h3>Koleksi Sneakers</h3>
+                <p>
+                    Berbagai pilihan sneakers untuk aktivitas sehari-hari,
+                    mulai dari gaya casual hingga streetwear.
+                </p>
+                <a href="#galeri" class="service-link">
+                    Lihat Koleksi <span>↗</span>
+                </a>
+            </article>
+
+            <!-- LAYANAN 2 -->
+            <article class="service-card">
+                <div class="service-icon">🏷️</div>
+                <span class="service-number">02</span>
+                <h3>Berbagai Brand</h3>
+                <p>
+                    Temukan pilihan produk dari brand populer seperti
+                    Nike, Adidas, Puma, dan New Balance.
+                </p>
+                <a href="#galeri" class="service-link">
+                    Jelajahi Brand <span>↗</span>
+                </a>
+            </article>
+
+            <!-- LAYANAN 3 -->
+            <article class="service-card">
+                <div class="service-icon">♻️</div>
+                <span class="service-number">03</span>
+                <h3>Preloved & Thrift</h3>
+                <p>
+                    Pilihan fashion preloved untuk kamu yang mencari
+                    gaya menarik dengan lebih banyak pilihan.
+                </p>
+                <a href="#galeri" class="service-link">
+                    Lihat Produk <span>↗</span>
+                </a>
+            </article>
+
+            <!-- LAYANAN 4 -->
+            <article class="service-card">
+                <div class="service-icon">🧢</div>
+                <span class="service-number">04</span>
+                <h3>Fashion Essentials</h3>
+                <p>
+                    Lengkapi penampilan dengan baju, celana,
+                    topi, sandal, dan berbagai item fashion lainnya.
+                </p>
+                <a href="#galeri" class="service-link">
+                    Temukan Gaya <span>↗</span>
+                </a>
+            </article>
+
+            <!-- LAYANAN 5 -->
+            <article class="service-card">
+                <div class="service-icon">💬</div>
+                <span class="service-number">05</span>
+                <h3>Bantuan Pelanggan</h3>
+                <p>
+                    Kami terbuka terhadap pertanyaan, kritik,
+                    dan saran untuk meningkatkan kualitas pelayanan.
+                </p>
+                <a href="#contact" class="service-link">
+                    Hubungi Kami <span>↗</span>
+                </a>
+            </article>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- WHY CHOOSE US -->
+<section class="why-us" id="why-us">
+    <div class="why-us-container">
+
+        <div class="why-us-heading">
+            <h2>
+                Mengapa Memilih
+                <span>PLATINIUM SNEAKERS?</span>
+            </h2>
+            <div class="why-us-line"></div>
+        </div>
+
+        <div class="why-us-grid">
+
+            <!-- KEUNGGULAN 1 -->
+            <div class="why-us-item">
+                <div class="why-us-icon">💬</div>
+                <h3>Pelayanan Ramah</h3>
+                <p>
+                    Kami siap membantu kamu menemukan sneakers
+                    dan fashion yang sesuai dengan kebutuhanmu.
+                </p>
+            </div>
+
+            <!-- KEUNGGULAN 2 -->
+            <div class="why-us-item">
+                <div class="why-us-icon">👟</div>
+                <h3>Banyak Pilihan</h3>
+                <p>
+                    Tersedia beragam model sepatu, pakaian,
+                    dan aksesori untuk melengkapi gaya kamu.
+                </p>
+            </div>
+
+            <!-- KEUNGGULAN 3 -->
+            <div class="why-us-item">
+                <div class="why-us-icon">✓</div>
+                <h3>Kualitas Pilihan</h3>
+                <p>
+                    Kami berupaya menyediakan produk dengan
+                    informasi kondisi yang jelas bagi pelanggan.
+                </p>
+            </div>
+
+            <!-- KEUNGGULAN 4 -->
+            <div class="why-us-item">
+                <div class="why-us-icon">♥</div>
+                <h3>Kepuasan Pelanggan</h3>
+                <p>
+                    Masukan dari kamu sangat berarti untuk
+                    meningkatkan kualitas produk dan pelayanan kami.
+                </p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+<!-- SNEAKERS COLLECTION GALLERY -->
+<section class="collection-gallery" id="galeri">
+
+    <div class="gallery-container">
+
+        <!-- JUDUL GALERI -->
+        <div class="gallery-heading">
+            <span class="gallery-subtitle">OUR COLLECTION</span>
+            <h2>Temukan Gaya <span>Favoritmu.</span></h2>
+            <p>
+                Pilihan sneakers dan fashion untuk melengkapi
+                penampilanmu setiap hari.
+            </p>
+        </div>
+
+        <!-- GRID GALERI -->
+        <div class="gallery-grid">
+
+            <a href="#shop" class="gallery-card gallery-large">
+                <img src="images/galeri1.jpg" alt="Koleksi sneakers harian">
+                <div class="gallery-info">
+                    <span>01 / COLLECTION</span>
+                    <h3>Everyday Sneakers</h3>
+                    <p>Nyaman untuk setiap langkah</p>
+                </div>
+                <span class="gallery-arrow">↗</span>
+            </a>
+
+            <a href="#shop" class="gallery-card">
+                <img src="images/galeri2.jpg" alt="Sneakers sporty">
+                <div class="gallery-info">
+                    <span>02 / FORMAL</span>
+                    <h3>Formal Untuk Acara</h3>
+                </div>
+                <span class="gallery-arrow">↗</span>
+            </a>
+
+            <a href="#shop" class="gallery-card">
+                <img src="images/galeri3.jpg" alt="Sneakers klasik">
+                <div class="gallery-info">
+                    <span>03 / CLASSIC</span>
+                    <h3>Untuk Berpakaian Classic</h3>
+                </div>
+                <span class="gallery-arrow">↗</span>
+            </a>
+
+            <a href="#shop" class="gallery-card">
+                <img src="images/galeri4.jpg" alt="Fashion streetwear">
+                <div class="gallery-info">
+                    <span>04 / SPORTY</span>
+                    <h3>Enak Untuk Berbagai OlahRaga</h3>
+                </div>
+                <span class="gallery-arrow">↗</span>
+            </a>
+
+            <a href="#shop" class="gallery-card">
+                <img src="images/galeri5.jpg" alt="Koleksi lifestyle">
+                <div class="gallery-info">
+                    <span>05 / LIFESTYLE</span>
+                    <h3>Bisa Dipakai Kemana Saja</h3>
+                </div>
+                <span class="gallery-arrow">↗</span>
+            </a>
+
+            <a href="#shop" class="gallery-card">
+                <img src="images/galeri6.jpg" alt="Koleksi sneakers pilihan">
+                <div class="gallery-info">
+                    <span>06 / TRENDING</span>
+                    <h3>Banyak Dicari Gen Z</h3>
+                </div>
+                <span class="gallery-arrow">↗</span>
+            </a>
+
+            <a href="#shop" class="gallery-card">
+                <img src="images/galeri7.jpg" alt="Sneakers kasual">
+                <div class="gallery-info">
+                    <span>07 / RUNNING</span>
+                    <h3>Untuk OlahRaga Lari Saja</h3>
+                </div>
+                <span class="gallery-arrow">↗</span>
+            </a>
+
+            <a href="#shop" class="gallery-card">
+                <img src="images/galeri8.jpg" alt="Fashion modern">
+                <div class="gallery-info">
+                    <span>08 / MODERN</span>
+                    <h3>Desainn Paling Modern</h3>
+                </div>
+                <span class="gallery-arrow">↗</span>
+            </a>
+
+            <a href="#shop" class="gallery-card">
+                <img src="images/galeri9.jpg" alt="Koleksi fashion lengkap">
+                <div class="gallery-info">
+                    <span>09 / STYLE</span>
+                    <h3>Masuk Di Berbagai Style Outfit </h3>
+                </div>
+                <span class="gallery-arrow">↗</span>
+            </a>
+
+        </div>
+
+        <!-- BAGIAN BAWAH GALERI -->
+        <div class="gallery-footer">
+            <p>Find your style. Make it yours.</p>
+            <a href="#shop" class="gallery-button">
+                Jelajahi Koleksi <span>→</span>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- KLIEN KAMI -->
+<section class="clients-section" id="klien">
+    <div class="clients-container">
+
+        <div class="clients-heading">
+            <h2>Brand<span>Kami</span></h2>
+            <div class="clients-line"></div>
+            <p>Beberapa brand sepatu dan fasion yang ada di kami.</p>
+        </div>
+
+        <div class="clients-slider">
+            <div class="clients-track">
+
+                <!-- LOGO UTAMA -->
+                <div class="client-logo">
+                    <img src="images/klien/ventela.png" alt="Ventela">
+                </div>
+                <div class="client-logo">
+                    <img src="images/klien/new-balance.png" alt="New Balance">
+                </div>
+                <div class="client-logo">
+                    <img src="images/klien/carhartt.png" alt="Carhartt">
+                </div>
+                <div class="client-logo">
+                    <img src="images/klien/stone-island.png" alt="Stone Island">
+                </div>
+                <div class="client-logo">
+                    <img src="images/klien/puma.png" alt="Puma">
+                </div>
+                <div class="client-logo">
+                    <img src="images/klien/patagonia.png" alt="Patagonia">
+                </div>
+                <div class="client-logo">
+                    <img src="images/klien/nike.png" alt="Nike">
+                </div>
+                <div class="client-logo">
+                    <img src="images/klien/adidas.png" alt="Adidas">
+                </div>
+
+                <!-- SALINAN UNTUK ANIMASI TANPA PUTUS -->
+                <div class="clients-group-copy" aria-hidden="true">
+
+                    <div class="client-logo">
+                        <img src="images/klien/ventela.png" alt="">
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/klien/new-balance.png" alt="">
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/klien/carhartt.png" alt="">
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/klien/stone-island.png" alt="">
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/klien/puma.png" alt="">
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/klien/patagonia.png" alt="">
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/klien/nike.png" alt="">
+                    </div>
+                    <div class="client-logo">
+                        <img src="images/klien/adidas.png" alt="">
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- NEWSLETTER SECTION -->
+<section class="newsletter" id="newsletter">
+    <div class="newsletter-container">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>
+            Dapatkan informasi koleksi terbaru, promo spesial,
+            dan tips merawat sneakers langsung ke email kamu.
+        </p>
+
+        <form class="newsletter-form" action="#" method="post">
+            <input
+                type="email"
+                name="email"
+                placeholder="Masukkan alamat email kamu"
+                aria-label="Alamat email"
+                required
+            >
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</section>
+
+<!-- FOOTER SECTION -->
+<footer class="main-footer" id="contact">
+    <div class="footer-container">
+
+        <!-- KOLOM 1 -->
+        <div class="footer-column footer-about">
+            <h3>Platinium Sneakers</h3>
+            <span class="footer-line"></span>
+
+            <p>
+                Temukan sneakers pilihan untuk melengkapi gaya
+                sehari-hari. Kami menyediakan berbagai pilihan
+                sepatu dan fashion dengan gaya yang beragam.
+            </p>
+
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook">FB</a>
+                <a href="#" aria-label="Instagram">IG</a>
+                <a href="#" aria-label="TikTok">TT</a>
+            </div>
+        </div>
+
+        <!-- KOLOM 2 -->
+        <div class="footer-column">
+            <h3>Shop</h3>
+            <span class="footer-line"></span>
+
+            <ul>
+                <li><a href="#galeri">Koleksi Sneakers</a></li>
+                <li><a href="#galeri">Best Sellers</a></li>
+                <li><a href="#galeri">Classic Sneakers</a></li>
+                <li><a href="#galeri">Fashion & Accessories</a></li>
+            </ul>
+        </div>
+
+        <!-- KOLOM 3 -->
+        <div class="footer-column">
+            <h3>Support</h3>
+            <span class="footer-line"></span>
+
+            <ul>
+                <li><a href="#contact">Layanan Pelanggan</a></li>
+                <li><a href="#contact">Informasi Pemesanan</a></li>
+                <li><a href="#contact">Panduan Ukuran</a></li>
+                <li><a href="#contact">FAQ</a></li>
+            </ul>
+        </div>
+
+        <!-- KOLOM 4 -->
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <span class="footer-line"></span>
+
+            <ul class="footer-contact">
+                <li>Jakarta, Indonesia</li>
+                <li>
+                    <a href="mailto:info@platiniumsneakers.com">
+                        info@platiniumsneakers.com
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/">
+                        Instagram Kami
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+        <p>
+            &copy; 2026 Platinium Sneakers.
+            All rights reserved.
+        </p>
+    </div>
+</footer>
+
+</body>
+</html>

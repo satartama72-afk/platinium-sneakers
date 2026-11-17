@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | PLATINIUM Sneakers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Bagian kiri -->
+        <section class="left-panel">
+            <a href="#" class="logo">PLATINIUM<span>.</span></a>
+
+            <div class="hero-text">
+                <p class="subtitle">STEP INTO YOUR STYLE</p>
+                <h1>Temukan<br>Gaya Terbaikmu.</h1>
+                <p class="description">
+                    Koleksi sneakers pilihan untuk melengkapi
+                    setiap langkah dan gaya kamu.
+                </p>
+            </div>
+
+            <p class="copyright">
+                &copy; 2026 PLATINIUM Sneakers.
+            </p>
+        </section>
+
+        <!-- Bagian kanan -->
+        <section class="right-panel">
+            <div class="login-box">
+
+                <a href="#" class="logo mobile-logo">
+                    PLATINIUM<span>.</span>
+                </a>
+
+                <div class="heading">
+                    <h2>Selamat Datang</h2>
+                    <p>Masuk ke akun PLATINIUM kamu.</p>
+                </div>
+
+                <form id="loginForm">
+
+                    <div class="form-group">
+                        <label for="username">
+                            Email atau Username
+                        </label>
+                        <input
+                            type="text"
+                            id="username"
+                            placeholder="Masukkan email atau username"
+                            autocomplete="username"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+
+                        <div class="password-box">
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Masukkan password"
+                                autocomplete="current-password"
+                                required
+                            >
+                            <button
+                                type="button"
+                                id="togglePassword"
+                            >Lihat</button>
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="remember">
+                            <input type="checkbox" id="remember">
+                            Ingat saya
+                        </label>
+
+                        <a href="#" id="forgotPassword">
+                            Lupa password?
+                        </a>
+                    </div>
+
+                    <button type="submit" class="login-button">
+                        Masuk
+                    </button>
+
+                <div class="separator">
+                    <span>ATAU</span>
+                </div>
+
+                <p class="privacy">
+                    Dengan masuk, kamu menyetujui Syarat &
+                    Ketentuan serta Kebijakan Privasi PLATINIUM.
+                </p>
+
+                
+                <p class="register">
+                    Belum punya akun?
+                    <a href="register.html">Daftar sekarang</a>
+                </p>
+
+
+            </div>
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

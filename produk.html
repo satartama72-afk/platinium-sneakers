@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jelajahi koleksi sneakers pilihan dari Platinium Sneakers.">
+    <title>Koleksi Sneakers | Platinium Sneakers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="produk-page">
+
+    <!-- NAVBAR -->
+    <header class="produk-navbar">
+        <a href="home.html" class="produk-logo">
+            PLATINIUM<span>.</span>
+        </a>
+
+        <nav class="produk-nav" id="produkNav">
+            <a href="home.html">Home</a>
+            <a href="home.html#about">About</a>
+            <a href="home.html#service">Our Service</a>
+            <a href="produk.html" class="active">Produk</a>
+            <a href="galeri.html">Galeri</a>
+            <a href="home.html#contact">Contact</a>
+            <a href="blog.html">Blog</a>
+        </nav>
+
+        <button
+            type="button"
+            class="produk-menu-toggle"
+            id="produkMenuToggle"
+            aria-label="Buka menu navigasi"
+            aria-expanded="false"
+            aria-controls="produkNav"
+        >☰</button>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="produk-hero">
+            <div class="produk-hero-overlay"></div>
+
+            <div class="produk-hero-content">
+                <span class="produk-eyebrow">STEP INTO YOUR STYLE</span>
+                <h1>Find Your<br><span>Perfect Sneakers.</span></h1>
+                <p>
+                    Temukan sneakers yang mencerminkan gayamu.
+                    Pilihan gaya, kenyamanan, dan karakter dalam satu koleksi.
+                </p>
+                <a href="#koleksi-produk" class="produk-hero-button">
+                    Jelajahi Koleksi <span>→</span>
+                </a>
+            </div>
+
+            <div class="produk-hero-number">01 / COLLECTION</div>
+        </section>
+
+        <!-- KATALOG -->
+        <section class="produk-section" id="koleksi-produk">
+            <div class="produk-section-heading">
+                <div>
+                    <span class="produk-eyebrow">CURATED FOR YOU</span>
+                    <h2>Koleksi <span>Produk</span></h2>
+                    <p>Pilih sneakers favoritmu untuk melengkapi setiap langkah.</p>
+                </div>
+                <span id="productResultCount" class="produk-result-count">
+                    Memuat produk...
+                </span>
+            </div>
+
+            <!-- SEARCH DAN FILTER -->
+            <div class="produk-toolbar">
+                <label class="produk-search">
+                    <span aria-hidden="true">⌕</span>
+                    <input
+                        type="search"
+                        id="productSearch"
+                        placeholder="Cari nama sneakers..."
+                        aria-label="Cari nama produk"
+                    >
+                </label>
+
+                <label class="produk-filter">
+                    <span>Kategori</span>
+                    <select id="productFilter" aria-label="Filter kategori">
+                        <option value="">Semua Produk</option>
+                        <option value="Running">Running</option>
+                        <option value="Lifestyle">Lifestyle</option>
+                        <option value="Classic">Classic</option>
+                        <option value="Casual">Casual</option>
+                    </select>
+                </label>
+            </div>
+
+            <!-- FILTER CEPAT -->
+            <div class="produk-category-chips" aria-label="Kategori produk">
+                <button type="button" class="produk-chip active" data-category="">
+                    Semua
+                </button>
+                <button type="button" class="produk-chip" data-category="Running">
+                    Running
+                </button>
+                <button type="button" class="produk-chip" data-category="Lifestyle">
+                    Lifestyle
+                </button>
+                <button type="button" class="produk-chip" data-category="Classic">
+                    Classic
+                </button>
+                <button type="button" class="produk-chip" data-category="Casual">
+                    Casual
+                </button>
+            </div>
+
+            <!-- PRODUK DARI ADMIN -->
+            <div id="productCatalog" class="produk-grid"></div>
+
+            <!-- KOSONG -->
+            <div id="emptyProducts" class="produk-empty" hidden>
+                <div class="produk-empty-icon">✦</div>
+                <h3>Koleksi Segera Hadir</h3>
+                <p>
+                    Belum ada produk yang ditambahkan.
+                    Tambahkan produk melalui halaman admin.
+                </p>
+                <a href="admin.html" class="produk-dark-button">
+                    Buka Admin
+                </a>
+            </div>
+
+            <!-- HASIL PENCARIAN KOSONG -->
+            <div id="noSearchResults" class="produk-empty" hidden>
+                <div class="produk-empty-icon">⌕</div>
+                <h3>Produk Tidak Ditemukan</h3>
+                <p>Coba kata kunci atau kategori yang berbeda.</p>
+                <button type="button" id="resetProductSearch" class="produk-dark-button">
+                    Tampilkan Semua Produk
+                </button>
+            </div>
+        </section>
+
+        <!-- PROMO PENUTUP -->
+        <section class="produk-promo">
+            <div>
+                <span class="produk-eyebrow">YOUR STYLE, YOUR STORY</span>
+                <h2>Setiap Langkah<br>Punya Cerita.</h2>
+                <p>Temukan pilihan yang cocok dengan gaya keseharianmu.</p>
+            </div>
+            <a href="home.html" class="produk-light-button">
+                Kembali ke Home <span>→</span>
+            </a>
+        </section>
+    </main>
+
+    <!-- MODAL DETAIL -->
+    <div id="productDetailModal" class="produk-modal" hidden>
+        <div class="produk-modal-backdrop" data-close-modal></div>
+
+        <section
+            class="produk-modal-card"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="detailProductTitle"
+        >
+            <button
+                type="button"
+                id="closeProductModal"
+                class="produk-modal-close"
+                aria-label="Tutup detail"
+            >×</button>
+
+            <img id="detailProductImage" src="" alt="">
+            <div class="produk-modal-content">
+                <span id="detailProductCategory" class="produk-eyebrow"></span>
+                <h2 id="detailProductTitle">Nama Produk</h2>
+                <p id="detailProductPrice" class="produk-modal-price"></p>
+                <p id="detailProductDescription"></p>
+            </div>
+        </section>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="produk-footer">
+        <a href="home.html" class="produk-logo">PLATINIUM<span>.</span></a>
+        <p>Find your style. Own your steps.</p>
+        <small>© 2026 Platinium Sneakers. All rights reserved.</small>
+    </footer>
+
+    <!-- Script utama website -->
+    <script src="script.js"></script>
+</body>
+</html>

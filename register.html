@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Akun | PLATINIUM Sneakers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <section class="left-panel">
+            <a href="index.html" class="logo">PLATINIUM<span>.</span></a>
+
+            <div class="hero-text">
+                <p class="subtitle">STEP INTO YOUR STYLE</p>
+                <h1>Mulai Gaya<br>Terbaikmu.</h1>
+                <p class="description">
+                    Buat akun PLATINIUM dan temukan sneakers
+                    favorit untuk setiap langkahmu.
+                </p>
+            </div>
+
+            <p class="copyright">
+                &copy; 2026 PLATINIUM Sneakers.
+            </p>
+        </section>
+
+        <section class="right-panel">
+            <div class="login-box">
+
+                <a href="index.html" class="logo mobile-logo">
+                    PLATINIUM<span>.</span>
+                </a>
+
+                <div class="heading">
+                    <h2>Buat Akun</h2>
+                    <p>Daftar sekarang dan bergabung dengan kami.</p>
+                </div>
+
+                <form id="registerForm">
+                    <div class="form-group">
+                        <label for="fullname">Nama Lengkap</label>
+                        <input
+                            type="text"
+                            id="fullname"
+                            placeholder="Masukkan nama lengkap"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input
+                            type="email"
+                            id="email"
+                            placeholder="nama@email.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="newPassword">Password</label>
+                        <input
+                            type="password"
+                            id="newPassword"
+                            placeholder="Minimal 8 karakter"
+                            minlength="8"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirmPassword">Konfirmasi Password</label>
+                        <input
+                            type="password"
+                            id="confirmPassword"
+                            placeholder="Ulangi password"
+                            minlength="8"
+                            required
+                        >
+                    </div>
+
+                    <button type="submit" class="login-button">
+                        Daftar Sekarang
+                    </button>
+
+                    <p id="registerMessage" class="message"></p>
+                </form>
+
+                <div class="separator">
+                    <span>ATAU</span>
+                </div>
+
+                <p class="register">
+                    Sudah punya akun?
+                    <a href="login.html">Masuk sekarang</a>
+                </p>
+
+                <p class="privacy">
+                    Dengan mendaftar, kamu menyetujui Syarat &
+                    Ketentuan serta Kebijakan Privasi PLATINIUM.
+                </p>
+
+            </div>
+        </section>
+
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>

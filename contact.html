@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Platinium Sneakers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header class="site-header">
+    <nav class="navbar">
+        <a href="home.html" class="logo">PLATINIUM.</a>
+
+        <div class="nav-menu">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Our Service</a>
+            <a href="galeri.html">Galeri</a>
+            <a href="contact.html" class="active">Contact</a>
+            <a href="blog.html">Blog</a>
+            <a href="produk.html">Produk</a>
+        </div>
+
+        <form class="nav-search" action="galeri.html">
+            <input type="search" name="q"
+                   placeholder="Search sneaker">
+            <button type="submit" aria-label="Cari">🔍</button>
+        </form>
+    </nav>
+</header>
+
+<!-- CONTACT HERO -->
+<section class="contact-hero">
+    <span>GET IN TOUCH</span>
+    <h1>Hubungi Kami</h1>
+    <p>Kami siap membantu menemukan sneakers yang tepat untukmu.</p>
+</section>
+
+<!-- CONTACT CONTENT -->
+<section class="contact-section">
+
+    <div class="contact-heading">
+        <span>CONTACT US</span>
+        <h2>Mari Terhubung dengan Kami</h2>
+        <p>
+            Punya pertanyaan tentang produk, ukuran, atau layanan kami?
+            Silakan hubungi Platinium Sneakers melalui informasi berikut.
+        </p>
+    </div>
+
+    <div class="contact-layout">
+
+        <!-- INFORMASI KONTAK -->
+        <div class="contact-info">
+            <h3>Informasi Kontak</h3>
+            <p class="contact-intro">
+                Kami senang membantu kebutuhan sneakers dan fashion kamu.
+            </p>
+
+            <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div>
+                    <h4>Alamat Toko</h4>
+                    <p>Isi alamat toko kamu di sini.</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">📞</div>
+                <div>
+                    <h4>Nomor Telepon</h4>
+                    <p>Isi nomor telepon toko kamu.</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">✉️</div>
+                <div>
+                    <h4>Email</h4>
+                    <p>Isi email resmi toko kamu.</p>
+                </div>
+            </div>
+
+            <div class="contact-item">
+                <div class="contact-icon">🕒</div>
+                <div>
+                    <h4>Jam Operasional</h4>
+                    <p>Senin–Sabtu: 09.00–21.00 WIB</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- FORM PESAN -->
+        <div class="contact-form-box">
+            <h3>Kirim Pesan</h3>
+            <p>Lengkapi formulir berikut untuk menghubungi kami.</p>
+
+            <form class="contact-form" id="contactForm">
+
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama"
+                       placeholder="Masukkan nama kamu" required>
+
+                <label for="email">Alamat Email</label>
+                <input type="email" id="email" name="email"
+                       placeholder="nama@email.com" required>
+
+                <label for="subjek">Subjek</label>
+                <input type="text" id="subjek" name="subjek"
+                       placeholder="Contoh: Informasi produk" required>
+
+                <label for="pesan">Pesan</label>
+                <textarea id="pesan" name="pesan" rows="5"
+                          placeholder="Tuliskan pesan kamu..."
+                          required></textarea>
+
+                <button type="submit" class="contact-submit">
+                    Kirim Pesan →
+                </button>
+
+                <p id="contactNotice" class="contact-notice"
+                   aria-live="polite"></p>
+            </form>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- GOOGLE MAPS -->
+<section class="contact-map-section">
+    <div class="contact-map-heading">
+        <span>OUR LOCATION</span>
+        <h2>Temukan Lokasi Kami</h2>
+        <p>Kunjungi toko kami dan temukan sneakers favoritmu.</p>
+    </div>
+
+    <div class="contact-map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.5476427173203!2d106.88177197586917!3d-6.322988961873827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ed756209eacb%3A0x625df26b3c6ce900!2sSMK%20Bhumi%20Husada!5e0!3m2!1sen!2sid!4v1792479449726!5m2!1sen!2sid"
+            width="100%"
+            height="400"
+            style="border:0;"
+            loading="lazy"
+            allowfullscreen
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Peta lokasi Platinium Sneakers">
+        </iframe>
+    </div>
+
+    <p class="map-note">
+        Lokasi peta masih menggunakan Jakarta, Indonesia.
+        Ganti dengan alamat toko kamu yang sebenarnya.
+    </p>
+</section>
+
+<!-- NEWSLETTER SECTION -->
+<section class="newsletter" id="newsletter">
+    <div class="newsletter-container">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>
+            Dapatkan informasi koleksi terbaru, promo spesial,
+            dan tips merawat sneakers langsung ke email kamu.
+        </p>
+
+        <form class="newsletter-form" action="#" method="post">
+            <input
+                type="email"
+                name="email"
+                placeholder="Masukkan alamat email kamu"
+                aria-label="Alamat email"
+                required
+            >
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</section>
+
+<!-- FOOTER SECTION -->
+<footer class="main-footer" id="contact">
+    <div class="footer-container">
+
+        <!-- KOLOM 1 -->
+        <div class="footer-column footer-about">
+            <h3>Platinium Sneakers</h3>
+            <span class="footer-line"></span>
+
+            <p>
+                Temukan sneakers pilihan untuk melengkapi gaya
+                sehari-hari. Kami menyediakan berbagai pilihan
+                sepatu dan fashion dengan gaya yang beragam.
+            </p>
+
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook">FB</a>
+                <a href="#" aria-label="Instagram">IG</a>
+                <a href="#" aria-label="TikTok">TT</a>
+            </div>
+        </div>
+
+        <!-- KOLOM 2 -->
+        <div class="footer-column">
+            <h3>Shop</h3>
+            <span class="footer-line"></span>
+
+            <ul>
+                <li><a href="#galeri">Koleksi Sneakers</a></li>
+                <li><a href="#galeri">Best Sellers</a></li>
+                <li><a href="#galeri">Classic Sneakers</a></li>
+                <li><a href="#galeri">Fashion & Accessories</a></li>
+            </ul>
+        </div>
+
+        <!-- KOLOM 3 -->
+        <div class="footer-column">
+            <h3>Support</h3>
+            <span class="footer-line"></span>
+
+            <ul>
+                <li><a href="#contact">Layanan Pelanggan</a></li>
+                <li><a href="#contact">Informasi Pemesanan</a></li>
+                <li><a href="#contact">Panduan Ukuran</a></li>
+                <li><a href="#contact">FAQ</a></li>
+            </ul>
+        </div>
+
+        <!-- KOLOM 4 -->
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <span class="footer-line"></span>
+
+            <ul class="footer-contact">
+                <li>Jakarta, Indonesia</li>
+                <li>
+                    <a href="mailto:info@platiniumsneakers.com">
+                        info@platiniumsneakers.com
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/">
+                        Instagram Kami
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+        <p>
+            &copy; 2026 Platinium Sneakers.
+            All rights reserved.
+        </p>
+    </div>
+</footer>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    document.getElementById("contactNotice").textContent =
+        "Formulir sudah diisi. Hubungkan formulir ke email atau backend agar pesan dapat dikirim.";
+
+});
+</script>
+
+</body>
+</html>

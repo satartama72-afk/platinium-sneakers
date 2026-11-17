@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | Platinium Sneakers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="admin-page">
+
+    <!-- LOGIN ADMIN -->
+    <section id="adminLogin" class="admin-login">
+        <form id="adminLoginForm" class="login-card">
+            <h1>PLATINIUM<span>.</span></h1>
+            <p>Admin Panel</p>
+
+            <label for="adminUsername">Username</label>
+            <input id="adminUsername" type="text"
+                   placeholder="Masukkan username" required>
+
+            <label for="adminPassword">Password</label>
+            <input id="adminPassword" type="password"
+                   placeholder="Masukkan password" required>
+
+            <p id="loginError" class="admin-error"></p>
+
+            <button type="submit" class="admin-primary">
+                Login Admin
+            </button>
+
+            <a href="home.html" class="back-website">
+                ← Kembali ke Website
+            </a>
+        </form>
+    </section>
+
+    <!-- DASHBOARD ADMIN -->
+    <section id="adminDashboard" class="admin-layout" hidden>
+
+        <aside class="admin-sidebar">
+            <h2>PLATINIUM<span>.</span></h2>
+            <p class="sidebar-label">ADMIN MENU</p>
+
+            <button class="admin-nav active" data-section="overview">
+                Dashboard
+            </button>
+
+            <button class="admin-nav" data-section="banner">
+                Kelola Banner
+            </button>
+
+            <button class="admin-nav" data-section="produk">
+                Kelola Produk
+            </button>
+
+            <button class="admin-nav" data-section="blog">
+                Kelola Blog
+            </button>
+
+            <button class="admin-nav" data-section="galeri">
+                Kelola Galeri
+            </button>
+
+            <a href="home.html" class="admin-website-link">
+                Lihat Website ↗
+            </a>
+
+            <button id="logoutButton" class="admin-logout">
+                Logout
+            </button>
+        </aside>
+
+        <main class="admin-main">
+            <header class="admin-topbar">
+                <div>
+                    <h1 id="pageTitle">Dashboard</h1>
+                    <p>Kelola website Platinium Sneakers</p>
+                </div>
+                <span class="admin-avatar">A</span>
+            </header>
+
+            <!-- DASHBOARD OVERVIEW -->
+            <section id="overviewSection" class="admin-section">
+                <div class="admin-welcome">
+                    <span>ADMIN PANEL</span>
+                    <h2>Selamat Datang!</h2>
+                    <p>
+                        Kelola banner, produk, artikel, dan galeri
+                        website dari satu tempat.
+                    </p>
+                </div>
+
+                <div class="admin-stats">
+                    <article class="admin-stat">
+                        <span>Total Banner</span>
+                        <strong id="bannerCount">1</strong>
+                    </article>
+
+                    <article class="admin-stat">
+                        <span>Total Produk</span>
+                        <strong id="productCount">0</strong>
+                    </article>
+
+                    <article class="admin-stat">
+                        <span>Total Artikel</span>
+                        <strong id="blogCount">0</strong>
+                    </article>
+
+                    <article class="admin-stat">
+                        <span>Total Galeri</span>
+                        <strong id="galleryCount">0</strong>
+                    </article>
+                </div>
+
+                <div class="admin-panel">
+                    <h3>Akses Cepat</h3>
+                    <p>Pilih bagian yang ingin kamu kelola.</p>
+
+                    <div class="quick-actions">
+                        <button data-open="banner">Edit Banner</button>
+                        <button data-open="produk">+ Produk</button>
+                        <button data-open="blog">+ Artikel Blog</button>
+                        <button data-open="galeri">+ Foto Galeri</button>
+                    </div>
+                </div>
+            </section>
+
+
+
+<!-- KELOLA 4 BANNER -->
+<section id="bannerSection" class="admin-section" hidden>
+    <div class="admin-panel">
+        <h2>Kelola 4 Banner Utama</h2>
+        <p>Ubah setiap slide banner yang tampil di halaman Home.</p>
+
+        <form id="bannerForm" class="admin-content-form">
+
+            <label for="bannerNumber">Pilih Banner</label>
+            <select id="bannerNumber">
+                <option value="0">Banner 1 - Collection Kami</option>
+                <option value="1">Banner 2 - Berbagai Brand Ternama</option>
+                <option value="2">Banner 3 - Kami Tidak Hanya Menjual Sneakers</option>
+                <option value="3">Banner 4 - Anda Puas Kami Puas</option>
+            </select>
+
+            <label for="bannerTitle">Judul Banner</label>
+            <input id="bannerTitle" type="text" required>
+
+            <label for="bannerDescription">Deskripsi Banner</label>
+            <textarea id="bannerDescription" rows="3" required></textarea>
+
+            <label for="bannerButtonText">Teks Tombol</label>
+            <input id="bannerButtonText" type="text" required>
+
+            <label for="bannerButtonLink">Link Tombol</label>
+            <input id="bannerButtonLink" type="text" required>
+
+            <label for="bannerImage">URL Gambar Banner</label>
+            <input id="bannerImage" type="url"
+                   placeholder="https://contoh.com/banner.jpg">
+
+            <label for="bannerOverlay">Kegelapan Gambar</label>
+            <input id="bannerOverlay" type="range"
+                   min="0" max="90" value="35">
+
+            <p id="overlayLabel">Kegelapan: 35%</p>
+
+            <div class="admin-form-actions">
+                <button type="submit" class="admin-primary">
+                    Simpan Banner
+                </button>
+
+                <button type="button" id="resetBanner"
+                        class="admin-secondary">
+                    Reset Banner Ini
+                </button>
+            </div>
+
+            <p id="bannerStatus" role="status"></p>
+        </form>
+    </div>
+
+    <div class="admin-panel">
+        <h3>Preview Banner</h3>
+
+        <div id="bannerPreview" class="banner-preview">
+            <h2 id="previewTitle">Collection Kami</h2>
+            <p id="previewDescription">
+                Memiliki Berbagai Macam Jenis Sepatu Di Toko Atau Tempat Kami
+            </p>
+            <a id="previewButton" href="galeri.html">Klik Disini</a>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- KELOLA PRODUK, BLOG, DAN GALERI -->
+<section id="managerSection" class="admin-section" hidden>
+
+    <div class="admin-panel">
+        <h2 id="managerTitle">Kelola Produk</h2>
+        <p id="managerDescription">Kelola koleksi produk sneakers.</p>
+
+        <form id="contentForm" class="admin-content-form">
+            <input type="hidden" id="editId">
+
+            <!-- NAMA / JUDUL -->
+            <label for="itemTitle" id="titleLabel">Nama Produk</label>
+            <input id="itemTitle" type="text"
+                   placeholder="Masukkan nama produk"
+                   required maxlength="120">
+
+            <!-- KHUSUS PRODUK -->
+            <div id="productFields">
+                <label for="itemPrice">Harga Produk (Rp)</label>
+                <input id="itemPrice" type="number"
+                       min="0" step="1"
+                       placeholder="Contoh: 899000">
+
+                <label for="itemCategory">Kategori Produk</label>
+                <select id="itemCategory">
+                    <option value="Running">Running</option>
+                    <option value="Lifestyle">Lifestyle</option>
+                    <option value="Classic">Classic</option>
+                    <option value="Casual">Casual</option>
+                </select>
+            </div>
+
+            <!-- DESKRIPSI / ISI ARTIKEL -->
+            <div id="descriptionField">
+                <label for="itemDescription" id="descriptionLabel">
+                    Deskripsi Produk
+                </label>
+                <textarea id="itemDescription"
+                          placeholder="Masukkan deskripsi produk"
+                          rows="4" maxlength="5000"></textarea>
+            </div>
+
+            <!-- GAMBAR -->
+            <label for="itemImage" id="imageLabel">URL Gambar Produk</label>
+            <input id="itemImage" type="url"
+                   placeholder="https://contoh.com/sepatu.jpg">
+
+            <img id="itemImagePreview" alt="Preview gambar"
+                 hidden
+                 style="max-width:250px;max-height:180px;object-fit:cover;margin-top:12px;border-radius:8px;">
+
+            <div class="admin-form-actions">
+                <button type="submit" class="admin-primary" id="saveButton">
+                    Tambahkan Produk
+                </button>
+
+                <button type="button" id="cancelEdit"
+                        class="admin-secondary" hidden>
+                    Batal Edit
+                </button>
+            </div>
+
+            <p id="contentStatus" role="status"></p>
+        </form>
+    </div>
+
+    <div class="admin-panel">
+        <h3 id="contentListTitle">Daftar Produk</h3>
+        <div id="contentList" class="admin-content-list"></div>
+    </div>
+
+</section>
+
+
+    <script src="admin.js"></script>
+</body>
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeri - Platinium Sneakers</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+
+<header class="site-header">
+    <nav class="navbar">
+        <a href="home.html" class="logo">PLATINIUM.</a>
+
+        <div class="nav-menu">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="service.html">Our Service</a>
+            <a href="galeri.html">Galeri</a>
+            <a href="contact.html">Contact</a>
+            <a href="blog.html">Blog</a>
+            <a href="produk.html">Produk</a>
+        </div>
+
+        <form class="nav-search" action="galeri.html">
+            <input type="search" name="q"
+                   placeholder="Search sneaker">
+            <button type="submit" aria-label="Cari">🔍</button>
+        </form>
+    </nav>
+</header>
+
+
+<!-- HERO GALERI -->
+<section class="gallery-hero">
+    <div class="gallery-hero-content">
+        <span>OUR COLLECTION</span>
+        <h1>Galeri Sneakers</h1>
+        <p>
+            Jelajahi koleksi sneakers pilihan dengan
+            berbagai gaya untuk setiap langkahmu.
+        </p>
+    </div>
+</section>
+
+<!-- GALERI -->
+<section class="gallery-page">
+    <div class="gallery-page-container">
+
+        <div class="gallery-page-heading">
+            <span>PORTOFOLIO KAMI</span>
+            <h2>Koleksi Pilihan Kami</h2>
+            <p>
+                Temukan inspirasi gaya dari berbagai koleksi
+                sneakers sporty, klasik, dan casual.
+            </p>
+        </div>
+
+        <div class="gallery-page-grid">
+
+            <a href="#koleksi1" class="gallery-page-card">
+                <img src="images/galeri1.jpg" alt="Sneakers casual">
+                <div class="gallery-page-info">
+                    <span>01 / CASUAL</span>
+                    <h3>Sneakers Collection</h3>
+                    <p>Koleksi sepatu pilihan untuk sehari-hari.</p>
+                </div>
+            </a>
+
+            <a href="#koleksi2" class="gallery-page-card">
+                <img src="images/galeri2.jpg" alt="Sneakers sporty">
+                <div class="gallery-page-info">
+                    <span>02 / SPORT</span>
+                    <h3>Sporty Style</h3>
+                    <p>Nyaman untuk aktivitas dan olahraga.</p>
+                </div>
+            </a>
+
+            <a href="#koleksi3" class="gallery-page-card">
+                <img src="images/galeri3.jpg" alt="Sneakers klasik">
+                <div class="gallery-page-info">
+                    <span>03 / CLASSIC</span>
+                    <h3>Classic Sneakers</h3>
+                    <p>Gaya klasik yang tidak lekang oleh waktu.</p>
+                </div>
+            </a>
+
+            <a href="#koleksi4" class="gallery-page-card">
+                <img src="images/galeri4.jpg" alt="Sneakers streetwear">
+                <div class="gallery-page-info">
+                    <span>04 / STREETWEAR</span>
+                    <h3>Streetwear</h3>
+                    <p>Lengkapi penampilan dengan gaya modern.</p>
+                </div>
+            </a>
+
+            <a href="#koleksi5" class="gallery-page-card">
+                <img src="images/galeri5.jpg" alt="Sneakers high top">
+                <div class="gallery-page-info">
+                    <span>05 / URBAN</span>
+                    <h3>Urban Collection</h3>
+                    <p>Tampilan berani untuk gaya perkotaan.</p>
+                </div>
+            </a>
+
+            <a href="#koleksi6" class="gallery-page-card">
+                <img src="images/galeri6.jpg" alt="Sneakers running">
+                <div class="gallery-page-info">
+                    <span>06 / RUNNING</span>
+                    <h3>Running Shoes</h3>
+                    <p>Temani langkah aktifmu setiap hari.</p>
+                </div>
+            </a>
+
+            <a href="#koleksi7" class="gallery-page-card">
+                <img src="images/galeri7.jpg" alt="Sneakers warna cerah">
+                <div class="gallery-page-info">
+                    <span>07 / COLORFUL</span>
+                    <h3>Color Collection</h3>
+                    <p>Warna menarik untuk gaya yang berbeda.</p>
+                </div>
+            </a>
+
+            <a href="#koleksi8" class="gallery-page-card">
+                <img src="images/galeri8.jpg" alt="Sneakers premium">
+                <div class="gallery-page-info">
+                    <span>08 / PREMIUM</span>
+                    <h3>Premium Sneakers</h3>
+                    <p>Perpaduan desain dan kenyamanan.</p>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="gallery-page-bottom">
+            <h3>Temukan Gaya Favoritmu</h3>
+            <p>Pilih sneakers yang paling sesuai dengan gayamu.</p>
+            <a href="home.html#shop" class="gallery-page-button">
+                Jelajahi Koleksi →
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- GALERI DARI ADMIN -->
+<section class="gallery-page">
+    <div class="gallery-page-container">
+        <div class="gallery-page-heading">
+            <span>KOLEKSI TERBARU</span>
+            <h2>Galeri Tambahan</h2>
+        </div>
+
+        <div id="adminGalleryItems" class="gallery-page-grid"></div>
+        <p id="galleryEmptyMessage" style="display:none; text-align:center;">
+            Belum ada koleksi tambahan.
+        </p>
+    </div>
+</section>
+
+<!-- NEWSLETTER SECTION -->
+<section class="newsletter" id="newsletter">
+    <div class="newsletter-container">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>
+            Dapatkan informasi koleksi terbaru, promo spesial,
+            dan tips merawat sneakers langsung ke email kamu.
+        </p>
+
+        <form class="newsletter-form" action="#" method="post">
+            <input
+                type="email"
+                name="email"
+                placeholder="Masukkan alamat email kamu"
+                aria-label="Alamat email"
+                required
+            >
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+</section>
+
+<!-- FOOTER SECTION -->
+<footer class="main-footer" id="contact">
+    <div class="footer-container">
+
+        <!-- KOLOM 1 -->
+        <div class="footer-column footer-about">
+            <h3>Platinium Sneakers</h3>
+            <span class="footer-line"></span>
+
+            <p>
+                Temukan sneakers pilihan untuk melengkapi gaya
+                sehari-hari. Kami menyediakan berbagai pilihan
+                sepatu dan fashion dengan gaya yang beragam.
+            </p>
+
+            <div class="footer-social">
+                <a href="#" aria-label="Facebook">FB</a>
+                <a href="#" aria-label="Instagram">IG</a>
+                <a href="#" aria-label="TikTok">TT</a>
+            </div>
+        </div>
+
+        <!-- KOLOM 2 -->
+        <div class="footer-column">
+            <h3>Shop</h3>
+            <span class="footer-line"></span>
+
+            <ul>
+                <li><a href="#galeri">Koleksi Sneakers</a></li>
+                <li><a href="#galeri">Best Sellers</a></li>
+                <li><a href="#galeri">Classic Sneakers</a></li>
+                <li><a href="#galeri">Fashion & Accessories</a></li>
+            </ul>
+        </div>
+
+        <!-- KOLOM 3 -->
+        <div class="footer-column">
+            <h3>Support</h3>
+            <span class="footer-line"></span>
+
+            <ul>
+                <li><a href="#contact">Layanan Pelanggan</a></li>
+                <li><a href="#contact">Informasi Pemesanan</a></li>
+                <li><a href="#contact">Panduan Ukuran</a></li>
+                <li><a href="#contact">FAQ</a></li>
+            </ul>
+        </div>
+
+        <!-- KOLOM 4 -->
+        <div class="footer-column">
+            <h3>Contact</h3>
+            <span class="footer-line"></span>
+
+            <ul class="footer-contact">
+                <li>Jakarta, Indonesia</li>
+                <li>
+                    <a href="mailto:info@platiniumsneakers.com">
+                        info@platiniumsneakers.com
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/">
+                        Instagram Kami
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- COPYRIGHT -->
+    <div class="footer-bottom">
+        <p>
+            &copy; 2026 Platinium Sneakers.
+            All rights reserved.
+        </p>
+    </div>
+</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
